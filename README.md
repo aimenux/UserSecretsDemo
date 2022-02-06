@@ -18,13 +18,13 @@ In this demo, i m using user secrets to access sensitive information which need 
 
 :pushpin: Enabling user secrets in .net projects can be done using :
 >
-> - Visual Studio (Right click on the project App and select Manage User Secrets)
+> - Visual Studio (Right click on the project `App` and select Manage User Secrets)
 >
-> - CLI (Run command `dotnet user-secrets init --project App` in your terminal)
+> - CLI (Run Command `dotnet user-secrets init --project App` in your Terminal)
 
 :pushpin: After enabling user secrets, an id `UserSecretsId` is added in the csproj project file.
 
-:pushpin: User Secrets are stored without encryption outside of the project tree in this path :
+:pushpin: User Secrets are stored **without encryption** outside of the project tree in this path :
 >
 > - For Windows : `%APPDATA%\Microsoft\UserSecrets\<UserSecretsId>\secrets.json`
 >
