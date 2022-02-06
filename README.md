@@ -1,9 +1,20 @@
+[![.NET](https://github.com/aimenux/UserSecretsDemo/actions/workflows/ci.yml/badge.svg)](https://github.com/aimenux/UserSecretsDemo/actions/workflows/ci.yml)
+
 # UserSecretsDemo
 ```
 Using user secrets to access sensitive information
 ```
 
-In this demo, i m using user secrets to access sensitive information which need to be kept out of source control (credentials, api keys, etc.).
+In this demo, i m using user secrets to access sensitive information which need to be kept out of source control :
+>
+> - credentials
+>
+> - connection strings
+>
+> - api keys
+>
+> - etc.
+>
 
 :pushpin: Enabling user secrets in .net projects can be done using :
 >
@@ -15,11 +26,12 @@ In this demo, i m using user secrets to access sensitive information which need 
 
 :pushpin: User Secrets are stored without encryption outside of the project tree in this path :
 >
-> - For Windows : %APPDATA%\Microsoft\UserSecrets\<UserSecretsId>\secrets.json
+> - For Windows : `%APPDATA%\Microsoft\UserSecrets\<UserSecretsId>\secrets.json`
 >
-> - For Linux/macOS : ~/.microsoft/usersecrets/<UserSecretsId>/secrets.json
+> - For Linux/macOS : `~/.microsoft/usersecrets/<UserSecretsId>/secrets.json`
 
 :pushpin: User Secrets CLI tool provide some interesting commands :
+>
 > - Use `dotnet user-secrets list --project App` to list user secrets
 >
 > - Use `dotnet user-secrets set SomeSecretKey SomeSecretValue --project App` to set user secrets
